@@ -11,6 +11,6 @@ wget --show-progress -O onlyoffice.deb https://download.onlyoffice.com/install/d
 
 sudo dpkg --add-architecture i686
 sudo apt update
-sudo apt install lib32stdc++6 ./vivaldi.deb ./discord.deb ./bluemail.deb ./steam.deb ./balena.deb ./obsidian.deb gimp inkscape chromium filezilla ./onlyoffice.deb
-sudo apt install virt-manager
+sudo apt install -y lib32stdc++6 ./vivaldi.deb ./discord.deb ./bluemail.deb ./steam.deb ./balena.deb ./obsidian.deb gimp inkscape chromium filezilla ./onlyoffice.deb
+sudo apt install -y virt-manager
 

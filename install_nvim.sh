@@ -1,7 +1,7 @@
 #!/usr/bin/bash
 set -e
 
-sudo apt install ninja-build gettext cmake unzip curl tar libstdc++6 gcc
+sudo apt install -y ninja-build gettext cmake unzip curl tar libstdc++6 gcc
 
 rm -rfv neovim
 git clone --branch stable https://github.com/neovim/neovim

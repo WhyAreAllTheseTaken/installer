@@ -1,5 +1,5 @@
 #!/usr/bin/bash
 set -e
 
-sudo apt install build-essential git wget curl bc
+sudo apt install -y build-essential git wget curl bc
 
