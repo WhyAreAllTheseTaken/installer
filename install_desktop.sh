@@ -9,7 +9,7 @@ git clone https://github.com/vivien/i3blocks-contrib.git
 cd i3blocks-contrib
 rm -rfv ~/.config/i3blocks
 mkdir -p ~/.config/i3blocks
-cp -rv ./. ~/.config/i3blocks
+cp -rv ./. ~/.config/i3blocks && true
 cd ..
 
 # Install Icons
