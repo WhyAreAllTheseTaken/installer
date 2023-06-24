@@ -9,6 +9,7 @@ git clone https://github.com/vivien/i3blocks-contrib.git
 cd i3blocks-contrib
 mkdir -p ~/.config/i3blocks
 cp -rv ./. ~/.config/i3blocks
+cd ..
 
 # Install Icons
 rm -rfv ./Wings-Plasma-Themes

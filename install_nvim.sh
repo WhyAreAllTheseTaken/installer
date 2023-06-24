@@ -11,5 +11,6 @@ cd build
 cpack -G DEB && sudo dpkg -i nvim-linux64.deb
 cd ../..
 
+rm -rfv ~/.local/share/nvim/site/packer/start/packer.nvim
 git clone --depth 1 https://github.com/wbthomason/packer.nvim\
  ~/.local/share/nvim/site/pack/packer/start/packer.nvim
