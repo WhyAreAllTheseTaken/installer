@@ -36,6 +36,6 @@ cd ..
 # Download nnn plugins
 sh -c "$(curl -Ls https://raw.githubusercontent.com/jarun/nnn/master/plugins/getplugs)"
 
-mkdir -p /usr/share/backgrounds
-cp -v ./bg1440p.png /usr/share/backgrounds
+sudo mkdir -p /usr/share/backgrounds
+sudo cp -v ./bg1440p.png /usr/share/backgrounds
 
