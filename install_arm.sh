@@ -7,5 +7,8 @@ sudo apt update
 ./install_cli.sh
 ./install_desktop.sh
 ./install_apps_arm.sh
+./install_dev.sh
 ./copy_gui_dotfiles.sh
+echo "Changing shell"
+chsh -s /usr/bin/zsh
 
