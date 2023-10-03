@@ -15,3 +15,5 @@ cd ../..
 
 git clone --depth 1 https://github.com/wbthomason/packer.nvim\
  ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+
+sudo apt install python3 nodejs npm
