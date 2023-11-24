@@ -30,3 +30,7 @@ To update to the newest version run:
 ./update.sh
 ```
 This will update all of the packages, recompile required programs, and update dotfiles.
+Additionally, some desktop components require the following command to be used instead:
+```bash
+./update.sh desktop
+```
