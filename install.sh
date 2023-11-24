@@ -11,7 +11,9 @@ sudo apt update
 sudo apt install -y zsh nnn htop neofetch
 
 # CLI apps
+./install_advcpmv.sh
 ./install_nvim.sh
+
 ./copy_cli_dotfiles.sh
 
 # Determine whether to install network manager.

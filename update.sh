@@ -13,7 +13,9 @@ sudo apt upgrade
 ./get_dotfiles.sh
 
 ## Setup CLI
+./install_advcpmv.sh
 ./install_nvim.sh
+
 ./copy_cli_dotfiles.sh
 
 arch=$(uname -m)
