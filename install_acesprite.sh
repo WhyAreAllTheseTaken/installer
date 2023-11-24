@@ -8,9 +8,9 @@ export CXX=clang++
 sudo apt install -y g++ clang libc++-dev libc++abi-dev cmake ninja-build libx11-dev libxcursor-dev libxi-dev libgl1-mesa-dev libfontconfig1-dev python3 python-is-python3
 
 # Remove skia and aseprite directories.
-rm -rf skia
-rm -rf depot_tools
-rm -rf aseprite
+rm -rfv skia
+rm -rfv depot_tools
+rm -rfv aseprite
 
 # Build Skia
 git clone --depth 1 https://chromium.googlesource.com/chromium/tools/depot_tools.git
@@ -43,4 +43,6 @@ sudo mkdir /opt/aseprite
 sudo cp -rv ./bin/* /opt/aseprite
 sudo cp -s /opt/aseprite/aseprite /usr/bin/aseprite
 cd ../../..
+
+./install_aseprite_plugins.sh
 
