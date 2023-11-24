@@ -18,6 +18,12 @@ sudo apt upgrade
 
 arch=$(uname -m)
 
+if [[ "desktop" == $1 ]]; then
+    ./install_aseprite.sh
+    
+    ./copy_gui_dotfiles.sh
+fi
+
 if [[ $arch == "x86_64" || $arch == "x64" ]]; then
     echo "Detected amd64";
     

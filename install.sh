@@ -34,7 +34,7 @@ else
     sudo apt install -y network-manager
 fi
 
-if [[ "Desktop" == $1 ]]; then
+if [[ "desktop" == $1 ]]; then
     echo "Installing desktop..."
     ./install_desktop.sh
 
@@ -47,6 +47,8 @@ if [[ "Desktop" == $1 ]]; then
     else
         echo "Unknown CPU architecture: $arch.";
     fi
+
+    ./install_aseprite.sh
     
     ./copy_gui_dotfiles.sh
 fi
@@ -61,6 +63,9 @@ elif [[ $arch == "aarch64" || $arch = "arm64" ]]; then
 else
     echo "Unknown CPU architecture: $arch.";
 fi
+
+# Install python
+sudo apt install python3 
 
 # Install rust
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y

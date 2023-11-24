@@ -1,4 +1,7 @@
 dotfiles
 openjdk*
 neovim*
+aseprite*
+depot_tools*
+skia*
 
