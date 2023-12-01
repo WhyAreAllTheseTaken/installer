@@ -46,6 +46,6 @@ rustup update
 # Update haskell
 ghcup upgrade
 
-# Install Prolog
-sudo apt install -y swi-prolog
+# Install Prolog and ruby
+sudo apt install -y swi-prolog ruby-full
 
