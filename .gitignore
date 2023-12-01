@@ -11,4 +11,6 @@ i3blocks-contrib
 i3lock-color
 Wings-Plasma-Themes
 rubygems*
+*.php
+*.phar
 

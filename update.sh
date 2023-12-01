@@ -49,3 +49,17 @@ ghcup upgrade
 # Install Prolog and ruby
 sudo apt install -y swi-prolog ruby-full
 
+# Install PHP
+sudo apt install -y php-cli
+
+if ! command -v composer
+then 
+    rm -fv composer-setup.php
+    rm -fv composer.phar 
+    wget --show-progress -O composer-setup.php https://getcomposer.org/installer
+    php composer-setup.php
+    sudo mv composer.phar /usr/local/bin/composer
+else
+    composer self-update
+fi
+
