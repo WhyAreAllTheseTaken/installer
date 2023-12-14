@@ -55,6 +55,9 @@ if [[ "desktop" == $1 ]]; then
     ./copy_gui_dotfiles.sh
 fi
 
+# Install LaTeX
+sudo apt install texlive
+
 # Setup java.
 if [[ $arch == "x86_64" || $arch == "x64" ]]; then
     echo "Detected amd64";

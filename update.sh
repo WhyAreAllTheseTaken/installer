@@ -12,6 +12,9 @@ sudo apt upgrade
 # Get latest dot files
 ./get_dotfiles.sh
 
+# Basic CLI tools
+sudo apt install -y zsh nnn htop neofetch
+
 ## Setup CLI
 ./install_advcpmv.sh
 ./install_nvim.sh
@@ -39,6 +42,9 @@ elif [[ $arch == "aarch64" || $arch = "arm64" ]]; then
 else
     echo "Unknown CPU architecture: $arch.";
 fi
+
+# Update texlive
+sudo apt install texlive
 
 # Update rust
 rustup update
