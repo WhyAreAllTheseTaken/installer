@@ -50,7 +50,14 @@ sudo apt install texlive
 rustup update
 
 # Update haskell
-ghcup upgrade
+if ! command -v ghcup
+then
+    sudo apt install -y libffi-dev libffi8 libgmp-dev libgmp10 libncurses-dev libncurses5 libtinfo5
+    set BOOTSTRAP_HASKELL_NONINTERACTIVE=1
+    curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | sh
+else
+    ghcup upgrade
+fi
 
 # Install Prolog and ruby
 sudo apt install -y swi-prolog ruby-full

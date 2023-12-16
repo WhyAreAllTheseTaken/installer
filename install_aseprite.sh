@@ -39,8 +39,10 @@ cmake \
   -G Ninja \
   ..
 ninja aseprite
+sudo rm -rfv /opt/aseprite
 sudo mkdir /opt/aseprite
 sudo cp -rv ./bin/* /opt/aseprite
+sudo rm -fv /usr/bin/aseprite
 sudo cp -s /opt/aseprite/aseprite /usr/bin/aseprite
 cd ../../..
 
