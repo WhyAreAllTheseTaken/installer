@@ -76,7 +76,7 @@ sudo apt install python3
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 
 # Install Haskell
-sudo apt install -y libffi-dev libffi7 libgmp-dev libgmp10 libncurses-dev libncurses5 libtinfo5
+sudo apt install -y libffi-dev libffi8 libgmp-dev libgmp10 libncurses-dev libncurses5 libtinfo5
 set BOOTSTRAP_HASKELL_NONINTERACTIVE=1
 curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | sh
 
