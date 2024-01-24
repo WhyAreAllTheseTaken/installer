@@ -56,7 +56,7 @@ if [[ "desktop" == $1 ]]; then
 fi
 
 # Install LaTeX
-sudo apt install texlive
+sudo apt install -y texlive
 
 # Setup java.
 if [[ $arch == "x86_64" || $arch == "x64" ]]; then
@@ -70,7 +70,7 @@ else
 fi
 
 # Install python
-sudo apt install python3 
+sudo apt install -y python3 
 
 # Install rust
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
