@@ -50,7 +50,7 @@ if [[ "desktop" == $1 ]]; then
         echo "Unknown CPU architecture: $arch.";
     fi
 
-    ./install_aseprite.sh
+    # ./install_aseprite.sh
     
     ./copy_gui_dotfiles.sh
 fi
