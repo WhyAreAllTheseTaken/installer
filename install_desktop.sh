@@ -1,7 +1,7 @@
 #!/usr/bin/bash
 set -e
 
-sudo apt install -y xorg i3 i3blocks rofi lightdm picom lxappearance materia-gtk-theme feh flameshot pavucontrol hicolor-icon-theme kitty fonts-noto libgtk-3-dev pasystray network-manager-gnome lxpolkit cava brightnessctl
+sudo apt install -y xorg i3 i3blocks rofi lightdm picom lxappearance materia-gtk-theme feh flameshot pavucontrol hicolor-icon-theme kitty fonts-noto libgtk-3-dev pasystray network-manager-gnome lxpolkit cava brightnessctl thunar
 
 # Install i3blocks
 rm -rfv ./i3blocks-contrib
