@@ -44,7 +44,7 @@ else
 fi
 
 # Update texlive
-sudo apt install texlive
+sudo apt install -y texlive
 
 # Update rust
 rustup update
