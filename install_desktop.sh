@@ -35,9 +35,6 @@ cd dragon
 sudo make PREFIX="/usr/bin" install
 cd ..
 
-# Download nnn plugins
-sh -c "$(curl -Ls https://raw.githubusercontent.com/jarun/nnn/master/plugins/getplugs)"
-
 sudo mkdir -p /usr/share/backgrounds
 sudo cp -v ./bg1440.png /usr/share/backgrounds
 
