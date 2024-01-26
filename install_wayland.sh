@@ -1,7 +1,7 @@
 #!/usr/bin/bash
 set -e
 
-sudo apt install -y rofi materia-gtk-theme pavucontrol hicolor-icon-theme kitty fonts-noto libgtk-3-dev pasystray network-manager-gnome lxpolkit cava
+sudo apt install -y rofi materia-gtk-theme pavucontrol hicolor-icon-theme kitty fonts-noto libgtk-3-dev pasystray network-manager-gnome lxpolkit cava brightnessctl thunar seatd wlprop
 
 # Install i3blocks
 rm -rfv ./i3blocks-contrib
@@ -36,4 +36,8 @@ cd ..
 
 sudo mkdir -p /usr/share/backgrounds
 sudo cp -v ./bg1440.png /usr/share/backgrounds
+
+# Add user to seat group.
+sudo groupadd seat
+sudo usermod -a -G seat "$USER"
 
