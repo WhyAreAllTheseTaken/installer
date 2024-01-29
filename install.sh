@@ -10,6 +10,9 @@ sudo apt update
 # Basic CLI tools
 sudo apt install -y zsh nnn htop neofetch
 
+# Download nnn plugins
+sh -c "$(curl -Ls https://raw.githubusercontent.com/jarun/nnn/master/plugins/getplugs)"
+
 # CLI apps
 ./install_advcpmv.sh
 ./install_nvim.sh
