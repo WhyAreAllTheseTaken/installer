@@ -15,4 +15,6 @@ rubygems*
 *.phar
 droidcam
 *.deb
+ltsatool
+ltsatool.zip
 
