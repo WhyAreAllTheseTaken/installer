@@ -26,7 +26,7 @@ arch=$(uname -m)
 if [[ "desktop" == $1 ]]; then
     ./install_desktop.sh
 
-    ./install_aseprite.sh
+    #./install_aseprite.sh
     
     ./copy_gui_dotfiles.sh
 fi
