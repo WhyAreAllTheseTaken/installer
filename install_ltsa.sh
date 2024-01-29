@@ -9,4 +9,6 @@ wget --show-progress -O ltsatool.zip https://www.doc.ic.ac.uk/~jnm/book/ltsa/lts
 unzip ltsatool.zip
 sudo rm -rfv /usr/local/share/ltsatool
 sudo cp -rv ./ltsatool /usr/local/share/
+sudo cp ./ltsa /usr/local/bin/
+sudo chmod +x /usr/local/bin/ltsa
 
