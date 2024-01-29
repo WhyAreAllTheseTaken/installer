@@ -75,7 +75,7 @@ then
     php composer-setup.php
     sudo mv composer.phar /usr/local/bin/composer
 else
-    composer self-update
+    sudo composer self-update
 fi
 
 ./install_ltsa.sh
