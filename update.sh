@@ -76,3 +76,5 @@ else
     composer self-update
 fi
 
+./install_ltsa.sh
+

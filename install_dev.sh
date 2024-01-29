@@ -40,6 +40,8 @@ fi
 # Install languages through apt
 sudo apt install -y swi-prolog ruby-full
 
+./install_ltsa.sh
+
 mkdir -p ~/dev
 mkdir -p ~/server
 
