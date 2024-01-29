@@ -43,6 +43,8 @@ else
     echo "Unknown CPU architecture: $arch.";
 fi
 
+sudo apt install -y maven
+
 # Update texlive
 sudo apt install -y texlive
 
