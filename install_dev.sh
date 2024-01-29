@@ -14,6 +14,9 @@ else
     echo "Unknown CPU architecture: $arch.";
 fi
 
+# Install Maven
+sudo apt install -y maven
+
 # Install python
 sudo apt install -y python3 
 
