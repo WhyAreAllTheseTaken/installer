@@ -46,7 +46,7 @@ fi
 sudo apt install -y maven
 
 # Update texlive
-sudo apt install -y texlive
+./install_tex.sh
 
 # Update rust
 rustup update

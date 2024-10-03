@@ -59,7 +59,7 @@ if [[ "desktop" == $1 ]]; then
 fi
 
 # Install LaTeX
-sudo apt install -y texlive
+./install_tex.sh
 
 sudo "Setting up development environment"
 ./install_dev.sh
